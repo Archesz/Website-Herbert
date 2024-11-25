@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 30px 100px;
+}
+
+// Páginas
+.home-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+:root{
+    --primary: #D81F26;
+    --black: #191A23;
+    --white: #F3F3F3;
+}

@@ -1,0 +1,102 @@
+.depoimentos-container {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  
+    .depoimentos-header {
+      margin-bottom: 30px;
+  
+      .depoimentos-title {
+        font-size: 28px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+      }
+  
+      .depoimentos-description {
+        font-size: 16px;
+        color: #bbb;
+      }
+    }
+  
+    .depoimentos-field {
+      display: flex;
+      justify-content: center;
+  
+      .depoimento-card {
+        background-color: #2b2b2b;
+        border: 2px solid #4caf50; // Cor verde para o balão
+        border-radius: 20px;
+        padding: 30px;
+        position: relative;
+        max-width: 600px;
+        text-align: left;
+  
+        .depoimento-text {
+          font-size: 16px;
+          color: #fff;
+          margin-bottom: 20px;
+        }
+  
+        .depoimento-author {
+          font-size: 14px;
+          font-weight: bold;
+  
+          .author-name {
+            color: #4caf50; // Verde para o nome
+          }
+  
+          .author-role {
+            color: #bbb;
+            display: block;
+            margin-top: 5px;
+          }
+        }
+  
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+          border-width: 20px;
+          border-style: solid;
+          border-color: #4caf50 transparent transparent transparent;
+        }
+      }
+    }
+  
+    .navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  
+      .arrow {
+        font-size: 24px;
+        cursor: pointer;
+        margin: 0 15px;
+      }
+  
+      .dots {
+        display: flex;
+  
+        .dot {
+          width: 10px;
+          height: 10px;
+          background-color: #555;
+          border-radius: 50%;
+          margin: 0 5px;
+  
+          &.active {
+            background-color: #4caf50; // Cor do indicador ativo
+          }
+        }
+      }
+    }
+  }
+  

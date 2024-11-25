@@ -1,0 +1,93 @@
+.estrutura-container {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    .estrutura-header {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        align-items: center;
+
+        .estrutura-title{
+            box-sizing: content-box;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            background-color: var(--primary);
+            font-size: 26px;
+            padding: 0px 5px;
+            color: white;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        .estrutura-description {
+            width: 600px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+
+        }
+    }
+}
+
+.estrutura-field {
+    margin-top: 40px;
+    width: 100%;
+    height: 320px;
+    box-shadow: 45px;
+    border: 1px solid black;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    gap: 2%;
+    background-color: var(--black);
+    align-items: center;
+
+    .estrutura-card{
+        width: 32%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 30px;
+        
+        &:first-of-type{
+            border-right: 1px solid var(--white);
+        }
+
+        &:last-of-type{
+            border-left: 1px solid var(--white);
+        }
+
+        .estrutura-name{
+            font-weight: bolder;
+            font-size: 18px;
+            color: var(--primary);
+        }
+
+        .estrutura-descript{
+            color: white;
+        }
+
+        .estrutura-btn{
+            width: 120px;
+            height: 40px;
+            background: none;
+            border: none;
+            color: var(--primary);
+            display: flex;
+            font-weight: bolder;
+            font-size: 16px;
+            align-items: flex-start;
+        }
+    }
+    
+}

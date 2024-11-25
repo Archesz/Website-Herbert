@@ -1,0 +1,24 @@
+.parceiros-container{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 115%;
+    margin-left: -7.5%;    
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        min-width: 60px;
+        height: 60px;
+
+        filter: grayscale(100%);
+        transition: filter 0.3s ease; /* Transição suave para hover */
+
+        &:hover {
+            /* Remove o preto e branco ao passar o mouse */
+            filter: grayscale(0%);
+        }
+    }
+
+}
