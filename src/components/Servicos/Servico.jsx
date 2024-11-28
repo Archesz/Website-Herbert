@@ -21,16 +21,6 @@ function Servico(props) {
 
             <img src={props.image} alt="" className='servico-image'/>
 
-            {/* Modal */}
-            {modalOpen && (
-                <div className="modal-overlay" onClick={toggleModal}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <span className="modal-title">{props.title}</span>
-                        <p className="modal-description">{props.fullDescription}</p>
-                        <button className="close-modal" onClick={toggleModal}>Fechar</button>
-                    </div>
-                </div>
-            )}
         </div>
     );
 }

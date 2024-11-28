@@ -34,7 +34,7 @@ function Servicos() {
 
                 <Servico 
                 title="Redações" 
-                style="black" 
+                style="white" 
                 image={prova}
                 description="Rotina de redações com correções e feedbacks individuais. Diversos temas e formatos para auxiliar em todas as provas!"
                 fullDescription="Nossas aulas presenciais proporcionam um ambiente de aprendizado colaborativo, com professores experientes preparados para os desafios do vestibular."
@@ -50,7 +50,7 @@ function Servicos() {
 
                 <Servico 
                 title="Plantões de Dúvidas" 
-                style="white" 
+                style="black" 
                 image={study}
                 description="Apoio continuo aos fins de semana e em horários personalizados para resolução de exercícios e provas."
                 fullDescription="Nossas aulas presenciais proporcionam um ambiente de aprendizado colaborativo, com professores experientes preparados para os desafios do vestibular."
@@ -66,7 +66,7 @@ function Servicos() {
 
                 <Servico 
                 title="Convivência" 
-                style="black" 
+                style="white" 
                 image={friends}
                 description="Ambiente acolhedor e colaboração para convivência, permitindo que nossos estudantes se sintam confortável no nosso espaço."
                 fullDescription="Nossas aulas presenciais proporcionam um ambiente de aprendizado colaborativo, com professores experientes preparados para os desafios do vestibular."
