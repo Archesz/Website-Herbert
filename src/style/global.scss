@@ -1,26 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+// src/style/global.scss
+
+// Definições de temas
+:root {
+  --primary: #D81F26;
+  --black: #191A23;
+  --white: #F3F3F3;
+
+  // Variáveis para o tema light
+  --background-color-light: #F3F3F3;
+  --text-color-light: #191A23;
+
+  // Variáveis para o tema dark
+  --background-color-dark: #191A23;
+  --text-color-dark: #F3F3F3;
 }
 
-.App{
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
-    padding: 30px 100px;
+// Estilos globais
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-// Páginas
-.home-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-family: "Lato", sans-serif;
+// Aplicação do tema
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
 }
 
-:root{
-    --primary: #D81F26;
-    --black: #191A23;
-    --white: #F3F3F3;
+// Container principal da aplicação
+.App {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 100px;
+
+  // Media query para telas menores
+  @media (max-width: 768px) {
+    padding: 20px 30px; // Reduz o padding lateral
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px 20px; // Reduz ainda mais em telas muito pequenas
+  }
+}
+
+// Estilo para container da home
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Lato", sans-serif;
+
+  // Ajuste para tamanhos de fonte menores em dispositivos móveis
+  @media (max-width: 768px) {
+    gap: 15px; // Reduz o gap entre elementos
+    font-size: 14px; // Reduz o tamanho da fonte
+  }
+
+  @media (max-width: 480px) {
+    gap: 10px;
+    font-size: 12px;
+  }
 }

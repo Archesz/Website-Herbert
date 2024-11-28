@@ -17,28 +17,22 @@ function Estrutura() {
         <div className='estrutura-card'>
           <span className='estrutura-name'>Corpo Docente</span>
           <span className='estrutura-descript'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            Com aproximadamente 50 professores, 6 coordenadores, 3 secretários e uma assembleia, os participantes do projeto se colocam a disposição para ajudar os nossos estudantes em todos os problemas cábiveis. 
           </span>
-
-          <button className='estrutura-btn'>Ler Mais</button>
         </div>
 
         <div className='estrutura-card'>
           <span className='estrutura-name'>Estrutura Física</span>
           <span className='estrutura-descript'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            Salas de Aula, Computadores, Internet, Cozinha, Sala de convivência, Secretaria e área de estudos externa! Use nosso espaço da forma que se sentir melhor para seus estudos!
           </span>
-
-          <button className='estrutura-btn'>Ler Mais</button>
         </div>
 
         <div className='estrutura-card'>
           <span className='estrutura-name'>Tecnologia</span>
           <span className='estrutura-descript'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            Disponibilizamos de Internet, computadores, impressoras, projetores, equipe de TI e muito mais para auxiliar os estudantes com quaisquer necessidades tecnologicas e semelhantes.
           </span>
-
-          <button className='estrutura-btn'>Ler Mais</button>
         </div>
 
       </div>

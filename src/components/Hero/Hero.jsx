@@ -8,7 +8,11 @@ function Hero() {
             <div className='hero-infos'>
                 <span className='hero-title'>Conquistando Espaços: Um dos caminhos para o seu futuro!</span>
                 <span className='hero-subtitle'>Nosso cursinho oferece uma preparação completa e acessível, com professores experientes, materiais de alta qualidade e apoio dedicado para ajudar você a conquistar a tão sonhada vaga na universidade.</span>
-                <button className='hero-btn'>Fazer Inscrição</button>
+                
+                <div className='hero-row'>
+                    <button className='hero-btn'>Ser um Aluno</button>
+                    <button className='hero-btn'>Ser um Professor</button>
+                </div>
 
                 {/* Detalhes flutuantes */}
                 <div className='floating-shape shape1'></div>

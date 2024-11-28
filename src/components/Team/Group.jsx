@@ -15,7 +15,6 @@ function Group(props) {
             {props.description}
           </p>
         </div>
-        <div className='linkedin-icon'>in</div>
       </div>
     </div>
   );

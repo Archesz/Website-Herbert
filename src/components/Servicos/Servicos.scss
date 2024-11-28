@@ -3,6 +3,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
     
     .servicos-header{
         width: 100%;
@@ -47,7 +48,7 @@
 }
 
 .servico{
-    width: 610px;
+    width: 600px;
     height: 310px;
     border: 1px solid black;
     padding: 40px;
@@ -60,7 +61,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 20px;
         
         .servico-title{
             font-size: 22px;
@@ -147,3 +148,76 @@
     align-items: center;
     justify-content: center;
 }
+
+/* Estilização do modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards; // Animação de fade-in
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transform: scale(0.7); // Começa menor
+    animation: scaleIn 0.3s forwards; // Animação de escala
+  }
+  
+  .modal-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--black);
+  }
+  
+  .modal-description {
+    margin-bottom: 20px;
+    color: var(--black);
+  }
+  
+  .close-modal {
+    background-color: #ff4444;
+    color: var(--black);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-modal:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Keyframes para animação */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.7); // Começa pequeno
+    }
+    to {
+      transform: scale(1); // Expande até o tamanho normal
+    }
+  }
+  

@@ -6,6 +6,7 @@
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    height: 400px;
   
     .depoimentos-header {
       margin-bottom: 30px;
@@ -29,7 +30,7 @@
   
       .depoimento-card {
         background-color: #2b2b2b;
-        border: 2px solid #4caf50; // Cor verde para o balão
+        border: 2px solid var(--primary); // Cor verde para o balão
         border-radius: 20px;
         padding: 30px;
         position: relative;
@@ -47,7 +48,7 @@
           font-weight: bold;
   
           .author-name {
-            color: #4caf50; // Verde para o nome
+            color: var(--primary); // Verde para o nome
           }
   
           .author-role {
@@ -55,17 +56,6 @@
             display: block;
             margin-top: 5px;
           }
-        }
-  
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: -20px;
-          left: 50%;
-          transform: translateX(-50%);
-          border-width: 20px;
-          border-style: solid;
-          border-color: #4caf50 transparent transparent transparent;
         }
       }
     }

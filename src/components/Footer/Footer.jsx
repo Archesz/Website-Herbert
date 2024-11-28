@@ -33,7 +33,7 @@ function Footer() {
         </div>
 
         <div className='footer-legal'>
-          <p>© 2023 Positivus. All Rights Reserved. <a href='#'>Privacy Policy</a></p>
+          <p>© 2024 AToSh. Todos os Direitos Reservados.</p>
         </div>
       </div>
     </div>

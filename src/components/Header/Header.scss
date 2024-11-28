@@ -1,49 +1,93 @@
-.header-container{
+.header-container {
     width: 100%;
     height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
 
-    .header-logo{
+    .header-logo {
         height: 60px;
     }
 
-    .header-menu{
+    .header-menu {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 30px;
         height: 100%;
-        
-        span{
+
+        .header-span {
+            text-decoration: none;
+            color: var(--black);
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
 
-            &:hover{
-                transition: .4s;
+            &:hover {
+                transition: 0.4s;
                 color: var(--primary);
             }
         }
-    
-        .header-btn{
-            padding: 20px 40px;
+
+        .header-btn {
+            padding: 10px 20px; // Reduz o padding em telas menores
             background: none;
             border-radius: 6px;
             border: 1px solid black;
             font-size: 16px;
             font-weight: bold;
 
-            &:hover{
-                transition: .4s;
+            &:hover {
+                transition: 0.4s;
                 background-color: var(--primary);
                 color: white;
                 border: 1px solid var(--primary);
                 cursor: pointer;
             }
         }
+    }
 
+    // Menu hamburguer (exibido em telas pequenas)
+    .hamburger {
+        display: none;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    // Media query para dispositivos menores (máx. 768px)
+    @media (max-width: 768px) {
+
+        .header-container{
+            background-color: red;
+            height: 30px;
+        }
+
+        .header-logo {
+            height: 45px;
+        }
+
+        .header-menu {
+            display: none; // Esconde o menu padrão
+
+            &.active {
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                position: absolute;
+                top: 90px;
+                right: 0;
+                width: 100%;
+                gap: 20px;
+                padding: 20px 0;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+        }
+
+        .hamburger {
+            display: block; // Mostra o ícone hamburguer
+        }
     }
 }

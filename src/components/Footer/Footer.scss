@@ -7,9 +7,9 @@
     flex-direction: column;
     gap: 30px;
     text-align: center;
-    height: 250px;
+    height: 280px;
     margin-bottom: -30px;
-    
+
     .footer-top {
       display: flex;
       justify-content: space-between;
@@ -103,7 +103,7 @@
   
       .footer-legal {
         flex: 1;
-        text-align: center;
+        text-align: right;
         margin-top: 20px;
   
         p {

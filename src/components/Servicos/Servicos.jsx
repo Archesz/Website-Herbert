@@ -17,20 +17,60 @@ function Servicos() {
                 <span className='servicos-title'>O que oferecemos</span>
 
                 <span className='servicos-description'>
-                    At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:
+                No Herbert, auxiliamos da melhor forma possível para garantir sua aprovação no vestibular. 
                 </span>
 
             </div>
 
             <div className='servicos-field'>
 
-                <Servico title="Aulas Presenciais" style="white" image={teachers}/>
-                <Servico title="Redação e Correções" style="red" image={prova}/>
-                <Servico title="Simulados" style="black" image={study}/>
-                <Servico title="Plantão de Dúvidas" style="white" image={help}/>
-                <Servico title="Educação Crítica" style="red" image={resist}/>
-                <Servico title="Boa Convivência" style="black" image={friends}/>
+                <Servico 
+                title="Aulas Presenciais" 
+                style="white" 
+                image={teachers}
+                description="Aulas dinâmicas com professores dedicados e em formação. Universitários, formados e atuantes no movimento de educação popular."
+                fullDescription="Nossas aulas presenciais proporcionam um ambiente de aprendizado colaborativo, com professores experientes preparados para os desafios do vestibular."
+                />
 
+                <Servico 
+                title="Redações" 
+                style="black" 
+                image={prova}
+                description="Rotina de redações com correções e feedbacks individuais. Diversos temas e formatos para auxiliar em todas as provas!"
+                fullDescription="Nossas aulas presenciais proporcionam um ambiente de aprendizado colaborativo, com professores experientes preparados para os desafios do vestibular."
+                />
+
+                <Servico 
+                title="Simulados" 
+                style="black" 
+                image={help}
+                description="Simulados realistas para preparação efetiva nos principais vestibulares e vestibulinhos."
+                fullDescription="Nossas aulas presenciais proporcionam um ambiente de aprendizado colaborativo, com professores experientes preparados para os desafios do vestibular."
+                />
+
+                <Servico 
+                title="Plantões de Dúvidas" 
+                style="white" 
+                image={study}
+                description="Apoio continuo aos fins de semana e em horários personalizados para resolução de exercícios e provas."
+                fullDescription="Nossas aulas presenciais proporcionam um ambiente de aprendizado colaborativo, com professores experientes preparados para os desafios do vestibular."
+                />
+
+                <Servico 
+                title="Educação Crítica" 
+                style="white" 
+                image={resist}
+                description="Formação para além do conteúdo acadêmico, educação crítica e social que vão além dos muros da Universidade."
+                fullDescription="Nossas aulas presenciais proporcionam um ambiente de aprendizado colaborativo, com professores experientes preparados para os desafios do vestibular."
+                />
+
+                <Servico 
+                title="Convivência" 
+                style="black" 
+                image={friends}
+                description="Ambiente acolhedor e colaboração para convivência, permitindo que nossos estudantes se sintam confortável no nosso espaço."
+                fullDescription="Nossas aulas presenciais proporcionam um ambiente de aprendizado colaborativo, com professores experientes preparados para os desafios do vestibular."
+                />
 
             </div>
 

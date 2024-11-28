@@ -1,39 +1,79 @@
-import React from 'react';
-import './Depoimentos.scss'; // Importa o arquivo SCSS
+import React, { useState } from 'react';
+import './Depoimentos.scss';
+
+const depoimentosData = [
+  {
+    text: "Graças ao curso, consegui entender conceitos complexos e melhorar muito meu desempenho em Matemática. Fui aprovado na minha primeira tentativa no vestibular!",
+    author: "Camila Ferreira",
+    role: "Estudante de Engenharia - Unicamp",
+  },
+  {
+    text: "As aulas de redação foram essenciais para minha aprovação. A atenção personalizada fez toda a diferença!",
+    author: "Lucas Mendes",
+    role: "Estudante de Direito - USP",
+  },
+  {
+    text: "O ambiente colaborativo e os plantões de dúvidas me ajudaram a manter a motivação alta. Recomendo para qualquer estudante que busca excelência!",
+    author: "Natália Rodrigues",
+    role: "Estudante de Medicina - USP",
+  },
+  {
+    text: "Os simulados realistas e a preparação intensiva me deram a confiança necessária para o ENEM. Sou muito grato à equipe de professores!",
+    author: "Renan Silva",
+    role: "Estudante de Economia - UFRJ",
+  },
+  {
+    text: "Além do conteúdo, o curso me ensinou disciplina e organização. Fui aprovado em duas universidades federais!",
+    author: "Juliana Castro",
+    role: "Estudante de Física - UNESP",
+  },
+];
 
 function Depoimentos() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextDepoimento = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % depoimentosData.length);
+  };
+
+  const prevDepoimento = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? depoimentosData.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <div className='depoimentos-container'>
       <div className='depoimentos-header'>
         <span className='depoimentos-title'>Depoimentos</span>
         <span className='depoimentos-description'>
-          O Projeto é feito de histórias e de pessoas, e todas são guardadas para que possamos lembrar nossa estrada até aqui.
+          O Projeto é feito de histórias e pessoas, todas guardadas para lembrar nossa jornada até aqui.
         </span>
       </div>
 
       <div className='depoimentos-field'>
         <div className='depoimento-card'>
           <p className='depoimento-text'>
-            "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
+            "{depoimentosData[currentIndex].text}"
           </p>
           <div className='depoimento-author'>
-            <span className='author-name'>John Smith</span>
-            <span className='author-role'>Marketing Director at XYZ Corp</span>
+            <span className='author-name'>{depoimentosData[currentIndex].author}</span>
+            <span className='author-role'>{depoimentosData[currentIndex].role}</span>
           </div>
         </div>
-
-        {/* Adicione mais depoimentos aqui */}
       </div>
 
       <div className='navigation'>
-        <span className='arrow'>&#8592;</span>
+        <span className='arrow' onClick={prevDepoimento}>&#8592;</span>
         <div className='dots'>
-          <span className='dot active'></span>
-          <span className='dot'></span>
-          <span className='dot'></span>
-          <span className='dot'></span>
+          {depoimentosData.map((_, index) => (
+            <span
+              key={index}
+              className={`dot ${index === currentIndex ? 'active' : ''}`}
+            />
+          ))}
         </div>
-        <span className='arrow'>&#8594;</span>
+        <span className='arrow' onClick={nextDepoimento}>&#8594;</span>
       </div>
     </div>
   );
