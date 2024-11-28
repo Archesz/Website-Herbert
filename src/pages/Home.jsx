@@ -22,17 +22,6 @@ function Home() {
 
             <Servicos />
 
-            <Banner />
-
-            <Estrutura />
-
-            <Funcionamento />
-
-            <Team />
-
-            <Depoimentos />
-
-            <Footer />
 
         </div>
     )
