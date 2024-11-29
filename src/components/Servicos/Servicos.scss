@@ -211,6 +211,43 @@
   }
 }
 
+@media (max-width: 320px){
+  .servicos-container {
+    margin-top: 40px;
+
+    .servicos-header {
+      margin-bottom: 60px;
+    }
+  }
+
+  .servicos-field{
+    margin-top: 40px;
+  }
+
+  .servico{
+
+    div{
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      
+      .servico-title{
+        padding: 10px 40px;
+      }
+
+      &:first-of-type {
+        width: 100%;
+      }
+    }
+    
+    .servico-image{
+      display: none;
+    }
+
+  }
+}
+
 @media (max-width: 480px) {
   .servicos-header {
     display: flex;

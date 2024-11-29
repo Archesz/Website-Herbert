@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';  // Importe o hook
 import './Depoimentos.scss';
 
 const depoimentosData = [
@@ -42,8 +43,16 @@ function Depoimentos() {
     );
   };
 
+  // Configuração dos gestos de arraste
+  const handlers = useSwipeable({
+    onSwipedLeft: nextDepoimento,  // Arraste para a esquerda para ir ao próximo depoimento
+    onSwipedRight: prevDepoimento, // Arraste para a direita para ir ao depoimento anterior
+    preventDefaultTouchmoveEvent: true, // Evita comportamentos padrão
+    trackMouse: true, // Permite também o uso do mouse
+  });
+
   return (
-    <div className='depoimentos-container'>
+    <div className='depoimentos-container' {...handlers}> {/* Adicione os handlers aqui */}
       <div className='depoimentos-header'>
         <span className='depoimentos-title'>Depoimentos</span>
         <span className='depoimentos-description'>
