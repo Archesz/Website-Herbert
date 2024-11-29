@@ -8,10 +8,9 @@
         width: 100%;
         height: 70px;
         display: flex;
-        flex-direction: row;
         align-items: center;
         gap: 20px;
-        align-items: center;
+        padding: 0 20px;
 
         .funcionamento-title {
             box-sizing: content-box;
@@ -27,10 +26,8 @@
         }
 
         .funcionamento-description {
-            width: 600px;
+            width: 100%;
             height: 50px;
-            display: flex;
-            align-items: center;
         }
     }
 
@@ -38,6 +35,13 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding: 20px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -67,6 +71,7 @@
 
     .card-header {
         display: flex;
+        flex-direction: c;
         align-items: center;
         justify-content: space-between;
 
@@ -104,5 +109,62 @@
         font-size: 16px;
         font-weight: bold;
         color: var(--white);
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px 25px;
+        .card-number {
+            font-size: 30px;
+        }
+
+        .card-title {
+            font-size: 24px;
+        }
+
+        .card-content {
+            font-size: 14px;
+        }
+    }
+}
+
+// Mobile & tablet responsiveness
+@media (max-width: 768px) {
+    .funcionamento-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .funcionamento-description {
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+
+    .funcionamento-field {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card-container {
+        margin: 15px 0;
+        padding: 20px 25px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        .card-number {
+            font-size: 28px;
+        }
+
+        .card-title {
+            font-size: 22px;
+        }
+
+        .toggle-button {
+            margin-top: 10px;
+        }
     }
 }

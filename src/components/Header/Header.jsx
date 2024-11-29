@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import './Header.scss';
 import logo from '../../assets/images/logo.png';
 
+function goToInscricao(url) {
+  window.open(url, '_blank');
+}
+
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -22,7 +26,7 @@ function Header() {
         <Link className='header-span' to="/equipe">Para Alunos</Link>
         <Link className='header-span' to="/estrutura">Estrutura</Link>
         <Link className='header-span' to="/contato">Contato</Link>
-        <button className='header-btn'>Inscrição</button>
+        <button className='header-btn' onClick={() => {goToInscricao("https://forms.gle/6AtJWtkq1oT7WcMv6")}}>Inscrição</button>
       </div>
     </div>
   );

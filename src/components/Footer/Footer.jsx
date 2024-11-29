@@ -13,17 +13,17 @@ function Footer() {
         </div>
         <div className='newsletter'>
           <input type='email' placeholder='Email' className='email-input' />
-          <button className='subscribe-btn'>Subscribe to news</button>
+          <button className='subscribe-btn'>Inscreva-se para Novidades!</button>
         </div>
       </div>
 
       <div className='footer-bottom'>
         <nav className='footer-nav'>
-          <a href='#'>About us</a>
-          <a href='#'>Services</a>
-          <a href='#'>Use Cases</a>
-          <a href='#'>Pricing</a>
-          <a href='#'>Blog</a>
+          <a href='#'>Sobre Nós</a>
+          <a href='#'>Professores</a>
+          <a href='#'>Alunos</a>
+          <a href='#'>Estrutura</a>
+          <a href='#'>Contato</a>
         </nav>
 
         <div className='social-icons'>
